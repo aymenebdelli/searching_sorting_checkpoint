@@ -1,0 +1,17 @@
+ALGORITHM insertion_sorting
+VAR
+ arr : ARRAY_OF INTEGER[11];
+ i:INTEGER;
+BEGIN
+// access to array values and positions
+    FOR i FROM 0 TO i-1 STEP step 1  DO
+        value := arr[i];
+        hole:=i;
+// arrangement new insertion from minest to bigest
+        WHILE (hole>0 && [hole-1]>value)) DO
+            arr[hole]:=arr[hole-1];
+            hole:=hole-1;
+        END_WHILE
+        arr:=value;
+    END_FOR
+END
